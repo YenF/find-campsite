@@ -26,13 +26,10 @@ function runFindCampsite(day: string) {
     const match = output.match(/Found (\d+) matching itinerary/);
     if (match) {
       const foundItineraryCount = parseInt(match[1], 10);
-      console.log("matches");
       if (foundItineraryCount > 0) {
-        console.log("matches initinerycount > 0");
         // Extract all the matching itineraries from the output
         const itineraryMatches = output.match(/\d+\/\d+\/\d+ to \d+\/\d+\/\d+ \(in \d+ week\):/g);
         if (itineraryMatches) {
-          console.log("matches initinerycount regex, will fire notification");
           let notificationMessage = `Found ${foundItineraryCount} matching itinerary on ${day.toUpperCase()}:\n\n`;
           for (const itinerary of itineraryMatches) {
             notificationMessage += `${itinerary}\n\n`;
