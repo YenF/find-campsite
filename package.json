@@ -12,9 +12,14 @@
     "LICENSE"
   ],
   "dependencies": {
+    "@types/node-cron": "^3.0.8",
+    "@types/node-notifier": "^8.0.2",
     "axios": "^0.21.2",
+    "cron": "^2.4.0",
     "fake-useragent": "^1.0.1",
     "luxon": "^1.24.1",
+    "node-cron": "^3.0.2",
+    "node-notifier": "^10.0.1",
     "yargs": "^15.3.1"
   },
   "devDependencies": {

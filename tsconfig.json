@@ -3,7 +3,8 @@
     "module": "CommonJS",
     "strict": true,
     "lib": ["ESNext"],
-    "outDir": "dist"
+    "outDir": "dist",
+    "downlevelIteration": true // Add this line to enable downlevelIteration
   },
   "include": [
     "src/**/*"
